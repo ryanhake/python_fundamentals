@@ -1,18 +1,20 @@
 '''
-Build on the previous exercise.
+CLASSES AND INHERITANCE
+=======================
 
-Create subclasses of two of the existing classes. Create a subclass of
-one of those so that the hierarchy is at least three levels.
+1) Define an empty Movie class.
 
-Build these classes out like we did in the previous exercise.
+2) Add a dunder init method that takes two arguments "year" and "title"
 
-If you cannot think of a way to build on your previous exercise,
-you can start from scratch here.
+3) Create a sub-class called "RomCom" that inherits from the Movie class
 
-We encourage you to be creative and try to think of an example of
-your own for this exercise but if you are stuck, some ideas include:
+4) Create another sub-class of the Movie class called "ActionMovie"
+    that overwrites the dunder init method of Movie and adds another
+    instance variable called "pg" that is set by default to the number 13.
 
-- A Vehicle superclass, with Truck and Motorcycle subclasses.
-- A Restaurant superclass, with Gourmet and FastFood subclasses.
+5) EXTRA: If you finish early, use the time to practice flushing out these
+    classes and white-boarding code. What attributes could a Movie class
+    contain? What methods? What tricks can you use through inheritance?
+    Any class attributes you could add?
 
 '''
