@@ -1,6 +1,6 @@
 '''
 
-Write the code to calculate how many seconds are in a year in this file,
-so you can execute it as a script and receive the output to your console.
+Move the code you previously wrote to calculate how many seconds are in a year into this file.
+Then execute it as a script to see the output printed to your console.
 
 '''
