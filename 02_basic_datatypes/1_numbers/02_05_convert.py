@@ -10,3 +10,12 @@ Demonstrate how to:
     Take note of what information is lost when some conversions take place.
 
 '''
+print(float(3))
+
+print(int(3.0))
+
+print(3.3 // 3)
+
+x = int(input("To multiply, please place an integer for x: "))
+y = int(input("To multiply, please place an integer for y: "))
+print(x*y)
