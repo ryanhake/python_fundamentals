@@ -7,3 +7,7 @@ Letter input: o
 Result: 4
 
 '''
+
+sentence = input("Please write a sentence: ")
+letter = input("PLease write a letter: ")
+print(sentence.index(letter))
