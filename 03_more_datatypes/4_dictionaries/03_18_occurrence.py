@@ -6,3 +6,7 @@ user_input = "hello"
 result = {"h": 1, "e": 1, "l": 2, "o": 1}
 
 '''
+
+userstr = str(input("please enter a word/sentence : "))
+result = eval(userstr)
+print(result)

@@ -11,3 +11,6 @@ Note: This lab might be challenging! Make sure to discuss it with your mentor
 or chat about it on our forum.
 
 '''
+
+n1 = input("please print a list of numbers separated by commas: ").split(",")
+print(n1.sort())
