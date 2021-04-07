@@ -12,5 +12,9 @@ or chat about it on our forum.
 
 '''
 
-n1 = input("please print a list of numbers separated by commas: ").split(",")
-print(n1.sort())
+us_input = input("please print a list of numbers separated by commas: ")
+spt1 = us_input.split(",")
+list1 = [spt1.sort()]
+tup1 = tuple(spt1)
+print(tup1)
+

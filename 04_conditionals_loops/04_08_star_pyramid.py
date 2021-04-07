@@ -17,3 +17,12 @@ Another example: if input is 3, you will output
 Hint: Think of nested for loops
 
 '''
+
+r = int(input("state number of rows here: "))
+x = 1
+for i in range(0, r):
+    starz = ""
+    for j in range(0, x):
+       starz += "*"
+    x = x + 1
+    print(starz)
