@@ -16,5 +16,8 @@ famous_quotes = [
     {"full_name": "Norman Augustine", "quote": "Software is like entropy: It is difficult to grasp, weighs nothing, "
                                                "and obeys the Second Law of Thermodynamics; i.e., it always increases."},
     {"full_name": "Nathan Myhrvold", "quote": "Software is a gas; it expands to fill its container."},
-    {"full_name": "Alan Bennett", "quote": "Standards are always out of date.  That’s what makes them standards."}
-]
+    {"full_name": "Alan Bennett", "quote": "Standards are always out of date.  That’s what makes them standards."}]
+for full_name_and_quote in famous_quotes:
+    full_name_split = full_name_and_quote['full_name'].split(" ")
+    reversed_name = full_name_split[-1] + ", " + full_name_split[0]
+    print(f"{full_name_and_quote['quote']} - {reversed_name}")

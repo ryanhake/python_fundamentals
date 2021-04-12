@@ -25,3 +25,9 @@ office = [
     {"full_name": "Creed Bratton", "item": "mung beans"},
     {"full_name": "Darryl Philbin", "item": "forklift"},
 ]
+#needs {office:>5} for spaces
+for name_item in office:
+    full_name_split = name_item['full_name'].split(" ")
+    reversed_name = full_name_split[-1] + ", " + full_name_split[0]
+    right_align = 50 - len(reversed_name)
+    print(f"{reversed_name : <20} {name_item['item'] : >20}")
