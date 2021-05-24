@@ -7,4 +7,15 @@ only if neither of them applies.
 
 '''
 
-file_name = 'integers.txt'
+with open("integers.txt", "r") as file:
+    data = file.read()
+    try:
+        for i in data[0]:
+            print(f"The first integer from 'integers.txt' is {i}.")
+            print("1 + 10 = 11")
+    except ValueError:
+        print('oops. thats not an integer.')
+    except IOError:
+        print("sorry you can't do that.")
+
+

@@ -23,3 +23,10 @@ BONUS CHALLENGE: write a custom Exception that inherits from Exception and raise
 first 100 characters of any of the files contain the string "Prince".
 
 '''
+
+with open("crime_and_punishment.txt", "r") as file:
+    x = file.readlines()
+    print(x)
+
+
+
