@@ -3,3 +3,8 @@ Demonstrate how to create a generator object. Print the object to the console to
 Then iterate over the generator object and print out each item.
 
 '''
+
+x = (i for i in range(5))
+print(x)
+for num in x:
+    print(num)

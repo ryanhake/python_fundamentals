@@ -9,3 +9,9 @@ TIP:
     very common. head over to SO and find a solution!
 
 '''
+import urllib.request
+from bs4 import BeautifulSoup
+page = urllib.request.urlopen("https://codingnomads.co/").read()
+html = BeautifulSoup(page, "html.parser")
+
+print(html.get_text())
