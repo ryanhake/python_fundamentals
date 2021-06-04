@@ -11,16 +11,26 @@ because Python modules can't begin with a number.
 
 '''
 import unittest
+import simple_func
 
-def subtract_divide(dividend, x, y):
-    try:
-        z = x - y
-        return dividend / z
-    except ZeroDivisionError:
-        return f"this won't work, {x} - {y} is 0 or lower."
 
-class TestFunction(unittest.TestCase)
-    pass
+class TestSimpleFunction(unittest.TestCase):
 
-def test_subtract_divide(self):
-    self.assertEquals()
+    def test_add(self):
+        result = simple_func.add(10, 5)
+        self.assertEqual(result, 15)
+
+    def test_subtract(self):
+        result = simple_func.subtract(10, 5)
+        self.assertEqual(result, 5)
+
+    def test_divide(self):
+        result = simple_func.divide(10, 5)
+        self.assertEqual(result, 2)
+
+        with self.assertRaises(ZeroDivisionError):
+            simple_func.divide(10, 0)
+
+
+if '__name__' == '__main__':
+    unittest.main()
