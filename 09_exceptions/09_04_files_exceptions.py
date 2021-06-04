@@ -24,9 +24,14 @@ first 100 characters of any of the files contain the string "Prince".
 
 '''
 
-with open("crime_and_punishment.txt", "r") as file:
-    x = file.readlines()
-    print(x)
+with open("war_and_peace.txt", "r", encoding='utf-8') as f:
+    f_contents = f.readlines(100)
+    print(f_contents)
+
+with open("crime_and_punishment.txt", "w", encoding='utf-8') as empty_str:
+    empty_str.write(" ")
+
+
 
 
 
