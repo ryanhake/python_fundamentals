@@ -1,6 +1,6 @@
 '''
 Write a script that takes the following two dictionaries and creates a new dictionary by combining
-the common keys and adding the values of duplicate keys together. Please use For Loops to iterate 
+the common keys.txt and adding the values of duplicate keys.txt together. Please use For Loops to iterate
 over these dictionaries to accomplish this task.
 
 Example input/output:
